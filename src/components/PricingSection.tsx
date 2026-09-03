@@ -18,13 +18,15 @@ export const PricingSection: React.FC<PricingSectionProps> = ({ onOpenConsultati
             <Zap className="w-3.5 h-3.5 text-amber-600 fill-amber-600" />
             <span>Transparent Pricing : 투명한 요금제</span>
           </div>
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight leading-[1.3]">
             월 20건 무료로 가볍게 시작하고,
-            <br />
-            <span className="text-amber-600">노쇼 1건 방어로 구독료의 3~5배를 회수하세요</span>
+            <br className="hidden sm:inline" />
+            <span className="text-amber-600"> 노쇼 1건 방어로 구독료의 3~5배를 회수하세요</span>
           </h2>
-          <p className="mt-3 text-slate-600 text-sm sm:text-base">
-            숨은 수수료 없이, 1인 펫 전문가의 비즈니스 성장에 꼭 맞춘 정직한 플랜
+          <p className="mt-3 text-slate-600 text-sm sm:text-base leading-relaxed max-w-2xl mx-auto">
+            숨은 수수료나 위약금 없이,
+            <br className="hidden md:inline" />
+            1인 펫 전문가의 성장에 발맞추는 투명하고 정직한 요금제
           </p>
 
           {/* Billing Cycle Toggle */}

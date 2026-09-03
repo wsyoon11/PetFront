@@ -14,13 +14,15 @@ export const PersonaTimeline: React.FC = () => {
             <UserCheck className="w-3.5 h-3.5 text-amber-600" />
             <span>Target Persona Story</span>
           </div>
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight leading-[1.3]">
             1인 방문 훈련사 이민수 님(32세)의
-            <br />
-            <span className="text-amber-600">하루 일과는 어떻게 바뀌었을까요?</span>
+            <br className="hidden sm:inline" />
+            <span className="text-amber-600"> 하루 일과는 어떻게 바뀌었을까요?</span>
           </h2>
-          <p className="mt-3 text-slate-600 text-sm sm:text-base">
-            DM 상담과 노쇼에 갇혀 밤 10시까지 엑셀과 씨름하던 이민수 훈련사님의 실화 기반 페르소나 비교
+          <p className="mt-3 text-slate-600 text-sm sm:text-base leading-relaxed max-w-2xl mx-auto">
+            인스타그램 DM 상담과 당일 노쇼에 갇혀 밤 10시까지 엑셀과 씨름하던
+            <br className="hidden md:inline" />
+            이민수 훈련사님의 실화 기반 전후(Before &amp; After) 일과 비교
           </p>
         </div>
 
@@ -34,7 +36,7 @@ export const PersonaTimeline: React.FC = () => {
                 className="w-24 h-24 sm:w-28 sm:h-28 rounded-2xl object-cover border-2 border-amber-300 shadow-sm"
               />
               <span className="absolute -bottom-2 -right-2 bg-slate-900 text-white text-[10px] font-bold px-2 py-0.5 rounded-full">
-                경력 5년차
+                경력 5년 차
               </span>
             </div>
 
@@ -46,8 +48,7 @@ export const PersonaTimeline: React.FC = () => {
                 </span>
               </div>
               <p className="text-xs sm:text-sm text-slate-600 leading-relaxed max-w-3xl">
-                &ldquo;몸으로 뛰는 직업인데도 예약 조율, 문진, 결제 독촉, 정산 같은 행정 업무에 하루 2시간 이상을 뺏겼습니다.
-                특히 당일 노쇼가 나면 1회 13만 원이 그대로 증발해 멘탈이 흔들렸는데, 펫프론트 도입 후 노쇼율 0%와 정시 퇴근을 되찾았습니다.&rdquo;
+                &ldquo;몸으로 뛰는 직업인데도 예약 조율, 사전 문진, 결제 확인, 엑셀 정산 같은 부수적인 행정 업무에 매일 2시간 이상을 뺏겼습니다. 특히 도착 직전 당일 노쇼가 나면 1회 13만 원이 허공으로 날아가 심리적 타격이 컸는데, 펫프론트 도입 후 노쇼율 0%와 정시 퇴근을 되찾았습니다.&rdquo;
               </p>
             </div>
 

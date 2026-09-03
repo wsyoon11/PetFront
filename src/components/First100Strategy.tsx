@@ -18,13 +18,15 @@ export const First100Strategy: React.FC<First100StrategyProps> = ({ onOpenConsul
             <Users className="w-3.5 h-3.5 text-amber-600" />
             <span>Go-To-Market : 첫 100명 고객 확보 채널 3가지</span>
           </div>
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight leading-[1.3]">
             가장 빠르게 1인 펫 전문가를 만나고,
-            <br />
-            <span className="text-amber-600">진짜 단골로 만드는 3대 침투 전략</span>
+            <br className="hidden sm:inline" />
+            <span className="text-amber-600"> 진짜 단골로 만드는 3대 침투 전략</span>
           </h2>
-          <p className="mt-3 text-slate-600 text-sm sm:text-base">
-            책상 위 마케팅이 아닌, 인스타 DM・긱 플랫폼 수수료・전문 학원 현장으로 직접 찾아갑니다.
+          <p className="mt-3 text-slate-600 text-sm sm:text-base leading-relaxed max-w-2xl mx-auto">
+            책상 위 추상적인 마케팅이 아닌,
+            <br className="hidden md:inline" />
+            인스타그램 DM・중개 플랫폼 탈출・전문가 양성 아카데미 현장으로 직접 찾아갑니다.
           </p>
         </div>
 

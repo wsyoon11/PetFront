@@ -107,7 +107,7 @@ export const ConsultationModal: React.FC<ConsultationModalProps> = ({
                     }
                     className="w-full border border-slate-300 rounded-xl px-3 py-2.5 text-xs sm:text-sm bg-white font-medium focus:ring-2 focus:ring-amber-500 focus:outline-hidden"
                   >
-                    <option value="방문 훈련/행동교정">방문 훈련/행동교정</option>
+                    <option value="방문 훈련/행동교정">방문 훈련/행동 교정</option>
                     <option value="1인 펫 미용실">1인 펫 미용실</option>
                     <option value="전문 펫시터">전문 펫시터</option>
                     <option value="창업 준비 중">창업 준비 중</option>
@@ -161,8 +161,9 @@ export const ConsultationModal: React.FC<ConsultationModalProps> = ({
             </div>
             <h3 className="text-xl font-black text-slate-900">신청이 정상 접수되었습니다!</h3>
             <p className="text-xs text-slate-600 leading-relaxed max-w-sm mx-auto">
-              <strong>{formData.name}</strong> 원장님, 펫프론트 전담 온보딩 매니저가 연락처(
-              <strong>{formData.phone}</strong>)로 24시간 이내에 카카오톡 안내 및 1:1 예약 링크 맞춤 세팅을 진행해 드립니다.
+              <strong>{formData.name}</strong> 원장님, 펫프론트 전담 온보딩 매니저가
+              <br />
+              연락처(<strong>{formData.phone}</strong>)로 24시간 이내에 1:1 맞춤 예약 링크 세팅 안내를 드립니다.
             </p>
 
             <div className="p-4 bg-amber-50 border border-amber-200 rounded-2xl text-xs text-amber-900 text-left space-y-1">
@@ -172,7 +173,7 @@ export const ConsultationModal: React.FC<ConsultationModalProps> = ({
               </div>
               <ul className="list-disc pl-4 space-y-0.5 text-[11px] text-amber-800">
                 <li>PetFront Pro 플랜 3개월 무료 이용권 부여</li>
-                <li>인스타 프로필 예약 링크 1:1 맞춤 무료 제작</li>
+                <li>인스타그램 프로필 예약 링크 1:1 맞춤 무료 세팅</li>
                 <li>원장님 전용 카카오 알림장 템플릿 무료 제공</li>
               </ul>
             </div>

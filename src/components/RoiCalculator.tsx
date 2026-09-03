@@ -27,13 +27,15 @@ export const RoiCalculator: React.FC<RoiCalculatorProps> = ({ onOpenConsultation
             <Calculator className="w-3.5 h-3.5 text-emerald-600" />
             <span>ROI Calculator : 노쇼 방지 및 수익 계산기</span>
           </div>
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight leading-[1.3]">
             &ldquo;한 달에 노쇼 딱 1건만 방어해도
-            <br />
-            <span className="text-emerald-600">구독료의 3~5배 이상을 뽑습니다&rdquo;</span>
+            <br className="hidden sm:inline" />
+            <span className="text-emerald-600"> 월 구독료의 3~5배 이상을 회수합니다&rdquo;</span>
           </h2>
-          <p className="mt-3 text-slate-600 text-sm sm:text-base">
-            원장님의 평균 시술/훈련 단가와 겪고 계신 노쇼 횟수를 입력하고 실제 회수 금액을 계산해보세요.
+          <p className="mt-3 text-slate-600 text-sm sm:text-base leading-relaxed max-w-2xl mx-auto">
+            원장님의 1회 평균 시술・훈련 단가와 겪고 계신 노쇼 횟수를 입력하고
+            <br className="hidden md:inline" />
+            실제 지켜낼 수 있는 연간 순수익을 직접 확인해보세요.
           </p>
         </div>
 
@@ -143,7 +145,7 @@ export const RoiCalculator: React.FC<RoiCalculatorProps> = ({ onOpenConsultation
                   <div className="text-xl sm:text-2xl font-black text-amber-400">
                     +{annualSavedHours}시간
                   </div>
-                  <span className="text-[10px] text-slate-400">DM 핑퐁/수기 정리 완전 해방</span>
+                  <span className="text-[10px] text-slate-400">DM 예약 조율・수기 정리 완벽 해방</span>
                 </div>
               </div>
 

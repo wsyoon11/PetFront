@@ -18,11 +18,11 @@ export const FaqSection: React.FC = () => {
             <HelpCircle className="w-3.5 h-3.5 text-slate-600" />
             <span>FAQ : 자주 묻는 질문</span>
           </div>
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight">
-            원장님들이 가장 궁금해하시는 점들
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight leading-[1.3]">
+            원장님들이 가장 자주 궁금해하시는 질문
           </h2>
-          <p className="mt-3 text-slate-600 text-sm">
-            예약금 설정, 기기 호환, 수수료까지 알기 쉽게 정리해 드립니다.
+          <p className="mt-3 text-slate-600 text-sm sm:text-base leading-relaxed">
+            예약금 설정, 모바일 호환성, 결제 수수료까지 알기 쉽게 정리해 드립니다.
           </p>
         </div>
 
@@ -55,8 +55,8 @@ export const FaqSection: React.FC = () => {
                 </button>
 
                 {isOpen && (
-                  <div className="px-5 pb-5 pt-1 text-xs sm:text-sm text-slate-600 leading-relaxed bg-slate-50/60 border-t border-slate-100">
-                    <p>{faq.answer}</p>
+                  <div className="px-5 pb-5 pt-3 text-xs sm:text-sm text-slate-600 leading-relaxed bg-slate-50/60 border-t border-slate-100">
+                    <p className="whitespace-pre-line">{faq.answer}</p>
                   </div>
                 )}
               </div>

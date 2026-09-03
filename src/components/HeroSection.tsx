@@ -44,18 +44,20 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
             </div>
 
             {/* Main Headline */}
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[46px] font-extrabold tracking-tight text-slate-900 leading-[1.25]">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[46px] font-extrabold tracking-tight text-slate-900 leading-[1.28]">
               &ldquo;DM 예약과 노쇼의 늪에서
-              <br />
+              <br className="hidden sm:inline" />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 via-orange-600 to-amber-700">
-                하루 2시간과 소중한 매출
+                {' '}하루 2시간과 소중한 매출을{' '}
               </span>
-              을 구출합니다&rdquo;
+              구출합니다&rdquo;
             </h1>
 
             {/* One-liner Subtitle */}
             <p className="text-base sm:text-lg text-slate-600 max-w-2xl leading-relaxed mx-auto lg:mx-0">
-              {COMPANY_INFO.oneLiner}
+              인스타그램 DM 예약의 번거로움과 노쇼 리스크를 말끔히 없애주는
+              <br className="hidden md:inline" />
+              1인 펫 전문가(미용·훈련·시팅) 전용 예약 및 고객 관리(CRM) 솔루션입니다.
             </p>
 
             {/* 3 Core Highlights */}
@@ -65,7 +67,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                   <CreditCard className="w-4 h-4 text-amber-600" />
                   <span>100% 예약금 선납</span>
                 </div>
-                <p className="text-xs text-slate-500">당일 노쇼 발생 시 10~15만 원 전액 보호</p>
+                <p className="text-xs text-slate-500">당일 노쇼 발생 시 10~15만 원 전액 안전 보호</p>
               </div>
 
               <div className="bg-white/80 backdrop-blur-xs border border-amber-200/60 rounded-xl p-3.5 shadow-xs">
@@ -73,7 +75,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                   <FileText className="w-4 h-4 text-amber-600" />
                   <span>펫 맞춤 사전 문진</span>
                 </div>
-                <p className="text-xs text-slate-500">입질·병력 사전 파악으로 상담 시간 80% 단축</p>
+                <p className="text-xs text-slate-500">입질·병력 사전 확인으로 상담 시간 80% 단축</p>
               </div>
 
               <div className="bg-white/80 backdrop-blur-xs border border-amber-200/60 rounded-xl p-3.5 shadow-xs">
@@ -100,7 +102,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                 className="w-full sm:w-auto px-6 py-4 rounded-xl bg-white border border-slate-300 hover:border-amber-400 hover:bg-amber-50/50 text-slate-700 hover:text-amber-800 font-semibold text-base transition-all flex items-center justify-center gap-2"
               >
                 <Smartphone className="w-4 h-4 text-amber-600" />
-                <span>실제 예약 화면 체험하기</span>
+                <span>실제 작동 화면 둘러보기</span>
               </button>
             </div>
 
@@ -111,7 +113,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                   <Star key={i} className="w-3.5 h-3.5 fill-amber-400" />
                 ))}
               </div>
-              <span className="font-semibold text-slate-700">&ldquo;한 달에 노쇼 딱 1건만 방어해도 구독료의 3~5배를 뽑습니다&rdquo;</span>
+              <span className="font-semibold text-slate-700">&ldquo;한 달에 노쇼 딱 1건만 방어해도 월 구독료의 3~5배 이상을 회수합니다&rdquo;</span>
             </div>
           </div>
 
@@ -162,7 +164,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                         <span className="font-bold text-xs text-slate-900">이민수 반려견 행동클리닉</span>
                         <CheckCircle2 className="w-3.5 h-3.5 text-blue-500 fill-blue-50" />
                       </div>
-                      <p className="text-[11px] text-slate-500">방문 훈련 &bull; 행동교정 &bull; 천안/아산 전지역</p>
+                      <p className="text-[11px] text-slate-500">방문 훈련 &bull; 행동 교정 &bull; 천안·아산 전 지역</p>
                     </div>
                   </div>
 

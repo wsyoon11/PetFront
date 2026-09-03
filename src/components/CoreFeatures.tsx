@@ -26,36 +26,41 @@ export const CoreFeatures: React.FC = () => {
             <Sparkles className="w-3.5 h-3.5 text-amber-600" />
             <span>Core Solution : 핵심 기능 3가지</span>
           </div>
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight leading-[1.3]">
             1인 펫 전문가가 꼭 필요로 하는
-            <br />
-            <span className="text-amber-600">3가지 핵심 엔진에 집중했습니다</span>
+            <br className="hidden sm:inline" />
+            <span className="text-amber-600"> 3가지 핵심 엔진에 집중했습니다</span>
           </h2>
-          <p className="mt-4 text-base text-slate-600">
-            불필요한 복잡함을 걷어내고, 예약금 결제・사전 문진・알림장 리텐션이라는 3대 본질에만 집중합니다.
+          <p className="mt-4 text-base text-slate-600 leading-relaxed max-w-2xl mx-auto">
+            불필요한 복잡함을 걷어내고, 예약금 결제・사전 문진・알림장 리텐션이라는
+            <br className="hidden md:inline" />
+            3대 본질에만 집중하여 실질적인 운영 효율을 극대화합니다.
           </p>
         </div>
 
         {/* Feature Navigation Pills */}
         <div className="flex flex-wrap items-center justify-center gap-2 mb-10">
-          {CORE_FEATURES.map((feat, index) => (
-            <button
-              key={index}
-              onClick={() => setActiveFeature(index)}
-              className={`px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all flex items-center gap-2 ${
-                activeFeature === index
-                  ? 'bg-slate-900 text-white shadow-md'
-                  : 'bg-slate-100 text-slate-600 hover:bg-slate-200'
-              }`}
-            >
-              <span className={`text-[10px] px-1.5 py-0.5 rounded font-black ${
-                activeFeature === index ? 'bg-amber-500 text-slate-900' : 'bg-slate-200 text-slate-700'
-              }`}>
-                {feat.priority}
-              </span>
-              <span>{feat.title.split(' ')[0]} {feat.title.split(' ')[1]}</span>
-            </button>
-          ))}
+          {CORE_FEATURES.map((feat, index) => {
+            const shortTitles = ['노쇼 방지 예약금', '펫 맞춤형 문진', '원클릭 알림장'];
+            return (
+              <button
+                key={index}
+                onClick={() => setActiveFeature(index)}
+                className={`px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all flex items-center gap-2 ${
+                  activeFeature === index
+                    ? 'bg-slate-900 text-white shadow-md'
+                    : 'bg-slate-100 text-slate-600 hover:bg-slate-200'
+                }`}
+              >
+                <span className={`text-[10px] px-1.5 py-0.5 rounded font-black ${
+                  activeFeature === index ? 'bg-amber-500 text-slate-900' : 'bg-slate-200 text-slate-700'
+                }`}>
+                  {feat.priority}
+                </span>
+                <span>{shortTitles[index]}</span>
+              </button>
+            );
+          })}
         </div>
 
         {/* Active Feature Deep Dive Showcase */}
@@ -122,7 +127,7 @@ export const CoreFeatures: React.FC = () => {
                   <div className="grid grid-cols-2 gap-2 text-xs font-semibold">
                     <div className="border border-slate-200 rounded-lg p-2.5 text-center bg-slate-50">
                       <span className="text-slate-500 block text-[10px]">결제 완료 시점</span>
-                      <span className="text-slate-800 font-bold">캘린더 즉시 확정 차단</span>
+                      <span className="text-slate-800 font-bold">캘린더 즉시 자동 확정</span>
                     </div>
                     <div className="border border-slate-200 rounded-lg p-2.5 text-center bg-slate-50">
                       <span className="text-slate-500 block text-[10px]">노쇼 방어율</span>
@@ -180,7 +185,7 @@ export const CoreFeatures: React.FC = () => {
                   </div>
 
                   <p className="text-[11px] text-slate-500 text-center pt-1">
-                    전문가가 원하는 문진 질문 항목을 자유롭게 추가/편집할 수 있습니다
+                    전문가가 원하는 문진 질문 항목을 자유롭게 추가하고 수정할 수 있습니다.
                   </p>
                 </div>
               )}

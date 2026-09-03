@@ -11,15 +11,17 @@ export const MarketVision: React.FC = () => {
             <Compass className="w-3.5 h-3.5" />
             <span>Market &amp; Business Model : 시장과 비전</span>
           </div>
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-tight">
-            5.9조 펫 시장의 파편화된 2만 명,
-            <br />
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-tight leading-[1.3]">
+            5.9조 원 펫 시장의 파편화된 2만 명,
+            <br className="hidden sm:inline" />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-orange-400">
-              펫 산업 창업자의 가장 확실한 &lsquo;인프라(곡괭이)&rsquo;
+              {' '}펫 산업 창업자의 가장 확실한 &lsquo;인프라(곡괭이)&rsquo;
             </span>
           </h2>
-          <p className="mt-4 text-slate-300 text-sm sm:text-base leading-relaxed">
-            예약/CRM SaaS 락인을 시작으로 B2B 도매 커머스와 선정산 핀테크까지 1인 펫 비즈니스의 평생 파트너로 확장합니다.
+          <p className="mt-4 text-slate-300 text-sm sm:text-base leading-relaxed max-w-2xl mx-auto">
+            예약・CRM SaaS 락인을 시작으로 B2B 도매 커머스와 선정산 핀테크까지,
+            <br className="hidden md:inline" />
+            1인 펫 비즈니스의 평생 파트너로 지속 확장합니다.
           </p>
         </div>
 
@@ -94,7 +96,7 @@ export const MarketVision: React.FC = () => {
               <span className="text-[11px] font-bold text-emerald-400">Phase 2 : 스케일업</span>
               <h5 className="font-bold text-sm text-white">B2B 전용 펫 도매 커머스</h5>
               <p className="text-xs text-slate-400">
-                1인 샵을 위한 미용 샴푸, 가위, 훈련 보조도구 대량 사입 및 최저가 공동구매
+                1인 샵을 위한 미용 샴푸, 클리퍼, 훈련 보조 도구 대량 사입 및 최저가 공동구매
               </p>
             </div>
 
@@ -102,7 +104,7 @@ export const MarketVision: React.FC = () => {
               <span className="text-[11px] font-bold text-blue-400">Phase 3 : 핀테크 완성</span>
               <h5 className="font-bold text-sm text-white">선정산 &amp; 샵 파이낸싱</h5>
               <p className="text-xs text-slate-400">
-                예약 데이터를 기반으로 안전한 당일 즉시 선정산 및 1인 창업 자금 파이낸싱
+                예약 데이터를 기반으로 안전한 당일 즉시 선정산 및 1인 창업 자금 마이크로 파이낸싱
               </p>
             </div>
           </div>

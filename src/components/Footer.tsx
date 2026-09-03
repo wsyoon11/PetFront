@@ -57,7 +57,7 @@ export const Footer: React.FC = () => {
               파트너십 &amp; 프로젝트
             </span>
             <p className="text-[11px] text-slate-400 leading-relaxed">
-              본 서비스는 1인 펫 긱워커(미용/훈련/시팅)의 IT 리터러시 극복 및 노쇼 방지를 위해 고안된 수직 B2B SaaS 인프라입니다.
+              본 서비스는 1인 펫 전문가(미용・훈련・시팅)의 IT 접근성 향상 및 노쇼 방지를 위해 고안된 버티컬 B2B SaaS 솔루션입니다.
             </p>
             <div className="pt-2 flex items-center gap-2 text-[10px] text-slate-400">
               <span className="px-2 py-0.5 rounded bg-white/5 border border-white/10">호서대학교</span>

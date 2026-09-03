@@ -12,13 +12,15 @@ export const ProblemSection: React.FC = () => {
             <AlertTriangle className="w-3.5 h-3.5" />
             <span>Problem : 펫 긱워커의 치명적 병목</span>
           </div>
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight leading-tight">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight leading-[1.3]">
             몸이 열 개라도 부족한 1인 펫 전문가,
-            <br />
-            <span className="text-red-600">왜 하루 2시간과 매출을 길바닥에 버릴까요?</span>
+            <br className="hidden sm:inline" />
+            <span className="text-red-600"> 왜 하루 2시간과 소중한 매출을 길바닥에 버릴까요?</span>
           </h2>
-          <p className="mt-4 text-base text-slate-600 leading-relaxed">
-            반려동물을 돌보는 시간보다, 인스타그램 DM 답장과 노쇼 뒤처리 등 비효율적인 수기 행정에 쏟는 에너지가 더 큽니다.
+          <p className="mt-4 text-base text-slate-600 leading-relaxed max-w-2xl mx-auto">
+            반려동물을 케어하는 본업 시간보다, 인스타그램 DM 답장과 노쇼 뒤처리 등
+            <br className="hidden md:inline" />
+            비효율적인 수기 행정에 쏟는 에너지가 훨씬 더 큽니다.
           </p>
         </div>
 
@@ -115,12 +117,12 @@ export const ProblemSection: React.FC = () => {
             <div>
               <div className="text-xs font-bold text-amber-400 mb-1">현장의 생생한 목소리</div>
               <p className="text-sm sm:text-base font-medium text-slate-200 leading-relaxed">
-                &ldquo;운전하고 가위질하느라 DM 확인이 1시간만 늦어도 고객은 다른 곳으로 가버리고, 도착 30분 전에 당일 취소 통보받으면 그날 오후 매출 15만 원이 증발합니다. 이게 일주일만 쌓여도 월세가 날아갑니다.&rdquo;
+                &ldquo;운전하고 가위질하느라 DM 확인이 1시간만 늦어도 고객은 다른 곳으로 가버리고, 도착 30분 전에 당일 취소 통보를 받으면 그날 오후 매출 15만 원이 증발합니다. 이게 일주일만 쌓여도 월세가 날아갑니다.&rdquo;
               </p>
             </div>
           </div>
           <div className="shrink-0 text-right text-xs text-slate-400">
-            <span className="text-slate-300 font-semibold block">천안/수도권 1인 펫 훈련사 &bull; 미용사 인터뷰</span>
+            <span className="text-slate-300 font-semibold block">천안·수도권 1인 펫 훈련사 &bull; 미용사 인터뷰</span>
             <span>2026 펫프론트 현장 심층 설문조사</span>
           </div>
         </div>

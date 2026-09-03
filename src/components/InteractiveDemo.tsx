@@ -55,13 +55,15 @@ export const InteractiveDemo: React.FC = () => {
             <Smartphone className="w-3.5 h-3.5 text-amber-700" />
             <span>Live Interactive Demo</span>
           </div>
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight leading-[1.3]">
             백문이 불여일견,
-            <br />
-            <span className="text-amber-600">펫프론트의 실제 작동 화면을 체험해보세요</span>
+            <br className="hidden sm:inline" />
+            <span className="text-amber-600"> 펫프론트의 실제 작동 화면을 체험해보세요</span>
           </h2>
-          <p className="mt-3 text-slate-600 text-sm sm:text-base">
-            고객이 인스타그램 프로필 링크를 눌렀을 때 마주하는 30초 예약창과 전문가의 CRM 화면입니다.
+          <p className="mt-3 text-slate-600 text-sm sm:text-base leading-relaxed max-w-2xl mx-auto">
+            보호자가 인스타그램 프로필 링크를 눌렀을 때 마주하는 30초 예약 화면과
+            <br className="hidden md:inline" />
+            1인 전문가가 사용하는 모바일 스케줄・CRM 대시보드를 직접 확인해보세요.
           </p>
         </div>
 
@@ -127,7 +129,7 @@ export const InteractiveDemo: React.FC = () => {
               />
               <div>
                 <div className="flex items-center gap-1.5">
-                  <h4 className="font-bold text-slate-900 text-sm">이민수 1인 방문 펫 훈련 &amp; 행동교정</h4>
+                  <h4 className="font-bold text-slate-900 text-sm">이민수 1인 방문 펫 훈련 &amp; 행동 교정</h4>
                   <span className="bg-amber-500 text-white text-[10px] font-bold px-1.5 py-0.2 rounded">인증됨</span>
                 </div>
                 <p className="text-xs text-slate-500">인스타그램 프로필 링크에서 바로 열린 예약 화면입니다.</p>
@@ -323,7 +325,7 @@ export const InteractiveDemo: React.FC = () => {
 
                     <div>
                       <label className="block text-slate-700 font-semibold mb-1">
-                        주요 문제행동 / 기저질환 / 요청사항
+                        주요 문제 행동 / 기저 질환 / 요청 사항
                       </label>
                       <textarea
                         rows={2}
@@ -389,7 +391,7 @@ export const InteractiveDemo: React.FC = () => {
 
                   <div className="p-3 bg-amber-50 rounded-xl border border-amber-200/60 text-xs text-amber-900 flex items-center gap-2">
                     <ShieldCheck className="w-5 h-5 text-amber-600 shrink-0" />
-                    <span>노쇼 위약금 보호 약관이 적용되어 당일 무단 취소 시 100% 보전됩니다.</span>
+                    <span>노쇼 위약금 보호 약관이 적용되어 당일 무단 취소 시 예약금이 100% 안전하게 보전됩니다.</span>
                   </div>
 
                   <button
@@ -502,7 +504,7 @@ export const InteractiveDemo: React.FC = () => {
             <div className="bg-slate-900 text-white rounded-2xl p-4 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs">
               <div className="flex items-center gap-2">
                 <Sparkles className="w-4 h-4 text-amber-400 shrink-0" />
-                <span>스케줄 중복 0건 &bull; 구글/네이버 캘린더 양방향 실시간 동기화 작동 중</span>
+                <span>스케줄 중복 0건 &bull; 구글・네이버 캘린더 양방향 실시간 동기화 작동 중</span>
               </div>
               <button
                 onClick={() => setActiveTab('report')}

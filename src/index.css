@@ -4,5 +4,19 @@
   html {
     scroll-behavior: smooth;
     font-family: "Pretendard", -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+    word-break: keep-all;
+    overflow-wrap: break-word;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  body {
+    word-break: keep-all;
+    overflow-wrap: break-word;
+  }
+
+  h1, h2, h3, h4, h5, h6, p, li, button, span {
+    word-break: keep-all;
   }
 }
+
